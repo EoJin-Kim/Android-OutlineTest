@@ -19,5 +19,12 @@ class MainActivity : AppCompatActivity() {
         transition.commit()
 
         window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN)
+
+
+    }
+
+    override fun onStart() {
+        super.onStart()
+        binding.layoutRoot.clipToOutline = true
     }
 }
